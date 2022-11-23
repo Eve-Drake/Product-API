@@ -1,5 +1,3 @@
-import e from 'express'
-import { printSourceLocation } from 'graphql'
 import React, { useState } from 'react'
 
 const AddProduct = () => {
@@ -7,8 +5,8 @@ const AddProduct = () => {
     const [price, setPrice] = useState<string>('')
     const [description, setDescription] = useState<string>('')
     
-    const handleSubmit = () =>{
-
+    const handleSubmit = (e: React.FormEvent<HTMLInputElement>) =>{
+        e.preventDefault();
     }
 
   return (

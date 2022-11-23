@@ -3,3 +3,18 @@
 *{
   font-family: 'Poppins', sans-serif;
 }
+
+.productPreview{
+  display: grid;
+  border: 2px solid black;
+  margin: 0.5em;
+  padding: 0.2em;
+}
+
+.productPreview:hover{
+  box-shadow: ;
+}
+
+.productPreview image{
+ border-radius: 15px;
+}
