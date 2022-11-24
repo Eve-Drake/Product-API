@@ -16,14 +16,17 @@ const AddProduct = () => {
       })
       .then(result => result.json())
 
-      //simputed so once the response has goen through, I add it manually 
+      //TODO: This API is simuled so once the response has goen through, I add it manually 
       .then(console.log)
     }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='add form'>
+      <label htmlFor='title'>Title: </label>
         <input value={title} onChange={(e)=>setTitle(e.target.value)}/>
+      <label htmlFor='title'>Description: </label>
         <input value={description} onChange={(e)=>setDescription(e.target.value)}/>
+      <label htmlFor='title'>Price: </label>
         <input value={price} onChange={(e)=>setPrice(e.target.value)}/>
         <button type='submit' >Submit</button>
     </form>

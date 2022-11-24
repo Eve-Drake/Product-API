@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import AddProduct from './AddProduct'
+import AddProduct from './componenets/AddProduct'
 import reactLogo from './assets/react.svg'
-import GetProductData from './GetProductData'
+import GetProductData from './componenets/GetProductData'
 import UpdateData from './UpdateData'
 
 

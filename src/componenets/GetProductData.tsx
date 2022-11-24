@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import DisplayData from './DisplayData';
-import ProductInterface from './ProductInterface'
+import ProductInterface from '../ProductInterface'
 
 
 const GetProductData = () => {
