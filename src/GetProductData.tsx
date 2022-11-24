@@ -10,8 +10,8 @@ const GetProductData = () => {
     try{
       fetch('https://dummyjson.com/products')
       .then((response) => response.json())
-      .then((json)=>{
-        setProducts(json.products)
+      .then((data)=>{
+        setProducts(data.products)
       })
     }
     catch(err : any){
