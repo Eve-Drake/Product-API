@@ -7,11 +7,15 @@
 .product-grid{
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(3, 30vw);
-
+  grid-template-columns: 30vw 30vw 10vw;
+  grid-template-rows: repeat(1fr, 3);
   border: 2px solid black;
   padding: 0.2em;
   margin: 0.5em;
+}
+
+.grid-row-span-3{
+  grid-row: span 3;
 }
 
 .product-grid:hover{
@@ -19,6 +23,7 @@
 }
 
 .product-image{
-  max-width: 30%;
+  max-width: 30vw;
   height: auto;
+  border-radius: 10px;
 }

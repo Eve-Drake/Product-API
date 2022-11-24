@@ -1,5 +1,6 @@
 import React from 'react'
 import ProductInterface from './ProductInterface'
+import StarRating from './StarRating';
 
 interface Props{
     product: ProductInterface;
@@ -17,7 +18,7 @@ const DisplayData = ({product} : Props) => {
             <p>{product.description}</p>
         </div>
         <div>
-          <p>{product.rating}</p>
+          <StarRating stars={product.rating}/>
         </div>
     </span>
   )
