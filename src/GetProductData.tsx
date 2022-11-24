@@ -1,4 +1,3 @@
-import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import DisplayData from './DisplayData';
 import ProductInterface from './ProductInterface'
@@ -9,8 +8,11 @@ const GetProductData = () => {
 
   const getProducts = async () =>{
     try{
-      const response =  await axios.get('https://dummyjson.com/products');
-      setProducts(response.data.products);
+      fetch('https://dummyjson.com/products')
+      .then((response) => response.json())
+      .then((json)=>{
+        setProducts(json.products)
+      })
     }
     catch(err : any){
       if(err.response){
