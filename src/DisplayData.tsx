@@ -9,7 +9,7 @@ interface Props{
 const DisplayData = ({product} : Props) => {
   return (
     <span className='product-grid'>
-        <div>
+        <div className='grid-row-span-3'>
             <img className='product-image'src={product.thumbnail} alt={product.description}/>
         </div>
         <div>
@@ -17,7 +17,7 @@ const DisplayData = ({product} : Props) => {
             <h2>£{product.price}</h2>
             <p>{product.description}</p>
         </div>
-        <div>
+        <div className='grid-row-span-2'>
           <StarRating stars={product.rating}/>
         </div>
     </span>
