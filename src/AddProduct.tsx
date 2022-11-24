@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import axios from 'axios';
 
 const AddProduct = () => {
-    const [title, setTitle] = useState<string>('')
-    const [price, setPrice] = useState<string>('')
-    const [description, setDescription] = useState<string>('')
+    const [title, setTitle] = useState<string>('');
+    const [price, setPrice] = useState<string>('');
+    const [description, setDescription] = useState<string>('');
     
-    const handleSubmit = (e: React.FormEvent<HTMLInputElement>) =>{
-        e.preventDefault();
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
+      e.preventDefault();
+      console.log('Click')
     }
 
   return (
@@ -14,7 +16,7 @@ const AddProduct = () => {
         <input value={title} onChange={(e)=>setTitle(e.target.value)}/>
         <input value={description} onChange={(e)=>setDescription(e.target.value)}/>
         <input value={price} onChange={(e)=>setPrice(e.target.value)}/>
-        <input type='submit' value='Submit'/>
+        <button type='submit' >Submit</button>
     </form>
 
   )
