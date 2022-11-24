@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
 const AddProduct = () => {
     const [title, setTitle] = useState<string>('');
@@ -8,7 +7,17 @@ const AddProduct = () => {
     
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>{
       e.preventDefault();
-      console.log('Click')
+      fetch('https://dummyjson.com/products/add', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          title: {title},
+        })
+      })
+      .then(result => result.json())
+
+      //simputed so once the response has goen through, I add it manually 
+      .then(console.log)
     }
 
   return (

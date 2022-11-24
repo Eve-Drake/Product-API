@@ -6,7 +6,7 @@ import ProductInterface from './ProductInterface'
 const GetProductData = () => {
   const [products, setProducts] = useState<ProductInterface[]>([]);
 
-  const getProducts = async () =>{
+  const getProducts = () =>{
     try{
       fetch('https://dummyjson.com/products')
       .then((response) => response.json())
