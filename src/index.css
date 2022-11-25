@@ -7,7 +7,7 @@
 .product-grid{
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 30vw 30vw 10vw;
+  grid-template-columns: 40vw 40vw 10vw;
   grid-template-rows: repeat(1fr, 3);
   border: 2px solid black;
   padding: 0.2em;
