@@ -39,6 +39,10 @@
   display: grid;
   grid-template-rows: repeat(1fr, 3);
   gap: 1rem;
+  border: 1px black solid;
+  border-radius: 15px;
+  padding: 0.5em;
+  margin: 0.2em;
 }
 
 .hide{

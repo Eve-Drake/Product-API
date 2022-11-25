@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react'
 import DisplayData from './DisplayData';
 import ProductInterface from '../ProductInterface'
 
-
-const GetProductData = () => {
-  const [products, setProducts] = useState<ProductInterface[]>([]);
+interface Props {
+  setProducts : React.Dispatch<React.SetStateAction<ProductInterface[]>>;
+  products: ProductInterface[]
+}
+const GetProductData = ({setProducts, products}: Props) => {
 
   const getProducts = () =>{
     try{
