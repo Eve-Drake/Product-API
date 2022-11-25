@@ -33,3 +33,14 @@
   height: auto;
   border-radius: 10px;
 }
+
+.add-form{
+  width: 30vw;
+  display: grid;
+  grid-template-rows: repeat(1fr, 3);
+  gap: 1rem;
+}
+
+.hide{
+  display: none;
+}

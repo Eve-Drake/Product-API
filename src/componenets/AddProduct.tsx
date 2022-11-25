@@ -16,12 +16,12 @@ const AddProduct = () => {
       })
       .then(result => result.json())
 
-      //TODO: This API is simuled so once the response has goen through, I add it manually 
+      //TODO: This API is simuled so once the response has gone through, I add it manually 
       .then(console.log)
     }
 
   return (
-    <form onSubmit={handleSubmit} className='add form'>
+    <form onSubmit={handleSubmit} className='add-form'>
       <label htmlFor='title'>Title: </label>
         <input value={title} onChange={(e)=>setTitle(e.target.value)}/>
       <label htmlFor='title'>Description: </label>
