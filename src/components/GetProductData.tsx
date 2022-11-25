@@ -4,7 +4,7 @@ import ProductInterface from '../ProductInterface'
 
 interface Props {
   setProducts : React.Dispatch<React.SetStateAction<ProductInterface[]>>;
-  products: ProductInterface[]
+  products: ProductInterface[];
 }
 const GetProductData = ({setProducts, products}: Props) => {
 

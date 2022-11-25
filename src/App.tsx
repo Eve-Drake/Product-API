@@ -1,12 +1,14 @@
 import { useState } from 'react'
-import AddProduct from './componenets/AddProduct'
-import GetProductData from './componenets/GetProductData'
+import AddProduct from './components/AddProduct'
+import GetProductData from './components/GetProductData'
+import SetCateogories from './components/SetCateogories';
 import ProductInterface from './ProductInterface';
 
 
 function App() {
   const [products, setProducts] = useState<ProductInterface[]>([]);
   const [show, setShow]  =useState<boolean>(false);
+  const [activeProductCategory, setActiveProductCatgory] = useState<string>('all')
   
   return (
     <div className="App">
@@ -14,6 +16,7 @@ function App() {
       <div className={(show? 'hide' : '')}>
         <AddProduct />
       </div>
+      <SetCateogories />
       <GetProductData setProducts={setProducts} products={products}/>
     </div>
   )
