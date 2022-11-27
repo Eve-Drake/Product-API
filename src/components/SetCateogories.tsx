@@ -15,7 +15,7 @@ const SetCateogories = () => {
       getCategories();
     },[])
   return (
-    <select></select>
+    <div></div>
   )
 }
 

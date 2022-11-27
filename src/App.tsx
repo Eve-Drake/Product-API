@@ -7,7 +7,7 @@ import ProductInterface from './ProductInterface';
 
 function App() {
   const [products, setProducts] = useState<ProductInterface[]>([]);
-  const [show, setShow]  =useState<boolean>(false);
+  const [show, setShow]  =useState<boolean>(true);
   const [activeProductCategory, setActiveProductCatgory] = useState<string>('all')
   
   return (
