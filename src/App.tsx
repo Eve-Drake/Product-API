@@ -17,7 +17,7 @@ function App() {
         <AddProduct />
       </div>
       <SetCateogories />
-      <GetProductData setProducts={setProducts} products={products}/>
+      <GetProductData setProducts={setProducts} products={products.slice(1, 10)}/>
     </div>
   )
 }
