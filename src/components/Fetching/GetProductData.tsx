@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import DisplayData from './DisplayData';
+import DisplayData from '../UI/DisplayData';
 import ProductInterface from '../ProductInterface'
 
 interface Props {

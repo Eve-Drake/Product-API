@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import Categories from './components/Categories';
-import AddProduct from './components/AddProduct'
-import GetProductData from './components/GetProductData'
-import SetCateogories from './components/SetCateogories';
-import GetCategories from './components/GetCategories';
-import ProductInterface from './ProductInterface';
+import Categories from './components/Features/Categories';
+import AddProduct from './components/Features/AddProduct'
+import GetProductData from './components/Fetching/GetProductData'
+import SetCateogories from './components/Features/SetCateogories';
+import GetCategories from './components/Fetching/GetCategories';
+import ProductInterface from './components/ProductInterface';
 
 
 function App() {
