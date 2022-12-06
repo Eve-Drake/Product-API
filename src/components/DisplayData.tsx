@@ -1,6 +1,6 @@
 import React from 'react'
 import ProductInterface from '../ProductInterface'
-import StarRating from '../StarRating';
+import StarRating from './StarRating';
 
 interface Props{
     product: ProductInterface;
