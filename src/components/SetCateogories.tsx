@@ -4,11 +4,16 @@ const SetCateogories = () => {
     const [categories, SetCateogories] = useState<string>('')
 
     const getCategories = () =>{
-      fetch('https://dummyjson.com/products/categories')
-      .then((response)=> response.json())
-      .then((data) =>{
-        SetCateogories(data)
-      })
+      try{
+        fetch('https://dummyjson.com/products/categories')
+        .then((response)=> response.json())
+        .then((data) =>{
+          SetCateogories(data)
+        })
+      }
+      catch(err){
+        console.error(err)
+      }
     }
 
     useEffect(()=>{

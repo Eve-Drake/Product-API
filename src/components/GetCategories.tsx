@@ -6,11 +6,18 @@ interface Props{
 
 const GetCategories = ({setCategoriesArray} : Props) => {
     const fetchCategories =()=>{
-        fetch('https://dummyjson.com/products/categories')
-        .then(data => data.json())
-        .then((data) =>{
-            setCategoriesArray(data)
-        })
+        try{
+            fetch('https://dummyjson.com/products/categories')
+            .then(data => data.json())
+            .then((data) =>{
+                setCategoriesArray(data)
+            })
+        }
+        catch (err){
+            console.error(err)
+        }
+        
+        
     }
 
     useEffect(() =>{
