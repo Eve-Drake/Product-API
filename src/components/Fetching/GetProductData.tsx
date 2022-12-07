@@ -30,15 +30,7 @@ const GetProductData = ({setProducts, products}: Props) => {
     getProducts();
   },[])
 
-  return (
-    <div>
-    {products.map((product)=>(
-        <div key={product.id}>
-          <DisplayData product={product} />
-        </div>
-      ))}
-    </div>
-  )
+  return (null)
 }
 
 export default GetProductData

@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from 'react'
 
 const SetCateogories = () => {
-    const [categories, SetCateogories] = useState<string>('')
+    const [categories, setCateogories] = useState<string>('')
 
     const getCategories = () =>{
       try{
         fetch('https://dummyjson.com/products/categories')
         .then((response)=> response.json())
         .then((data) =>{
-          SetCateogories(data)
+          setCateogories(data)
         })
       }
       catch(err){
@@ -19,9 +19,7 @@ const SetCateogories = () => {
     useEffect(()=>{
       getCategories();
     },[])
-  return (
-    <div></div>
-  )
+  return (null)
 }
 
 export default SetCateogories

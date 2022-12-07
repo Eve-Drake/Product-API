@@ -5,6 +5,7 @@ import GetProductData from './components/Fetching/GetProductData'
 import SetCateogories from './components/Features/SetCateogories';
 import GetCategories from './components/Fetching/GetCategories';
 import ProductInterface from './components/ProductInterface';
+import DisplayData from './components/UI/DisplayData';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   const [activeProductCategory, setActiveProductCatgory] = useState<string>('all')
   
   return (
-    <div className="App">
+    <>
       <button onClick={()=>setShow(!show)}>{(show ? 'Show Form' : 'Hide Form')}</button>
       <div className={(show? 'hide' : '')}>
         <AddProduct />
@@ -22,7 +23,14 @@ function App() {
         <Categories />
       </div>
       <GetProductData setProducts={setProducts} products={products.slice(1, 10)}/>
-    </div>
+      
+        {products.map((product)=>(
+          <div key={product.id}>
+            <DisplayData product={product} />
+          </div>
+        ))}
+
+    </>
   )
 }
 
