@@ -2,16 +2,24 @@
 
 *{
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+.products-display-grid{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 30vw 30vw 30vw;
 }
 
 .product-grid{
+  overflow-y: hidden;
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: 40vw 40vw 10vw;
+  grid-template-columns: 20vw 20vw 5vw;
   grid-template-rows: repeat(1fr, 3);
+  height: 20vh;
   border: 2px solid black;
   padding: 0.2em;
-  margin: 0.5em;
   align-items: center;
   justify-content: center;
 }
@@ -29,8 +37,6 @@
 }
 
 .product-image{
-  max-width: 30vw;
-  height: auto;
   border-radius: 10px;
 }
 

@@ -23,13 +23,13 @@ function App() {
         <Categories />
       </div>
       <GetProductData setProducts={setProducts} products={products.slice(1, 10)}/>
-      
+      <div className='products-display-grid'>
         {products.map((product)=>(
           <div key={product.id}>
             <DisplayData product={product} />
           </div>
         ))}
-
+      </div>
     </>
   )
 }
