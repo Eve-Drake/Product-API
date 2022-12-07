@@ -21,7 +21,6 @@ function App() {
         <GetCategories setCategoriesArray={setCategoriesArray}/>
         <Categories />
       </div>
-      <SetCateogories />
       <GetProductData setProducts={setProducts} products={products.slice(1, 10)}/>
     </div>
   )

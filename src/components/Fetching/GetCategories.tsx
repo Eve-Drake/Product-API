@@ -19,10 +19,10 @@ const GetCategories = ({setCategoriesArray} : Props) => {
         
         
     }
-
     useEffect(() =>{
        fetchCategories() 
     },[])
+    
   return (null)
 }
 
