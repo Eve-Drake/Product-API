@@ -22,7 +22,8 @@ function App() {
         <GetCategories setCategoriesArray={setCategoriesArray}/>
         <Categories />
       </div>
-      <GetProductData setProducts={setProducts} products={products.slice(1, 10)}/>
+      <GetProductData setProducts={setProducts} products={products}/>
+      <h1>All Products</h1>
       <div className='products-display-grid'>
         {products.map((product)=>(
           <div key={product.id}>
