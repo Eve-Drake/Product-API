@@ -5,7 +5,8 @@
   overflow-x: hidden;
 }
 
-.products-display-grid{
+@media (min-width: 960px){
+  .products-display-grid{
   display: grid;
   gap: 1rem;
   grid-template-columns: 30vw 30vw 30vw;
@@ -23,6 +24,9 @@
   align-items: center;
   justify-content: center;
 }
+}
+
+
 
 .product-grid h1{
   font-size: 2vw
