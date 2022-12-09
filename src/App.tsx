@@ -6,13 +6,14 @@ import SetCateogories from './components/Features/SetCateogories';
 import GetCategories from './components/Fetching/GetCategories';
 import ProductInterface from './components/ProductInterface';
 import DisplayData from './components/UI/DisplayData';
+import AllProductsDisplay from './components/UI/AllProductsDisplay';
 
 
 function App() {
   const [products, setProducts] = useState<ProductInterface[]>([]);
   const [show, setShow]  =useState<boolean>(true);
   const [categoriesArray, setCategoriesArray] = useState<string[]>([])
-  const [activeProductCategory, setActiveProductCatgory] = useState<string>('all')
+  const [activeProductCategory, setActiveProductCatgory] = useState<string>('All')
   
   return (
     <>
@@ -23,14 +24,7 @@ function App() {
         <Categories />
       </div>
       <GetProductData setProducts={setProducts} products={products}/>
-      <h1>All Products</h1>
-      <div className='products-display-grid'>
-        {products.map((product)=>(
-          <div key={product.id}>
-            <DisplayData product={product} />
-          </div>
-        ))}
-      </div>
+      <AllProductsDisplay products={products} activeProductCategory={activeProductCategory}/>
     </>
   )
 }
