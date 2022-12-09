@@ -7,6 +7,7 @@ import GetCategories from './components/Fetching/GetCategories';
 import ProductInterface from './components/ProductInterface';
 import DisplayData from './components/UI/DisplayData';
 import AllProductsDisplay from './components/UI/AllProductsDisplay';
+import Nav from './components/UI/Nav';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   
   return (
     <>
+    <Nav />
       <button onClick={()=>setShow(!show)}>{(show ? 'Show Form' : 'Hide Form')}</button>
       <div className={(show? 'hide' : '')}>
         <AddProduct />
