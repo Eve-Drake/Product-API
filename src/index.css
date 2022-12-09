@@ -6,13 +6,11 @@
 }
 
 @media (min-width: 960px){
-    
   .products-display-grid{
     display: grid;
     gap: 1rem;
     grid-template-columns: 30vw 30vw 30vw;
   }
-
   .product-grid{
     overflow-y: hidden;
     border: gainsboro 1px solid;
@@ -25,17 +23,14 @@
     align-items: center;
     justify-content: center;
   }
-
 }
 
 @media (max-width: 960px){
-      
   .products-display-grid{
     display: grid;
     gap: 1rem;
     grid-template-columns: 40vw 40vw;
   }
-
   .product-grid{
     overflow-y: hidden;
     border: gainsboro 1px solid;
