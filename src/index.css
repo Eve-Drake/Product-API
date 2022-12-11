@@ -23,6 +23,16 @@
     align-items: center;
     justify-content: center;
   }
+  
+.add-form{
+  width: 30vw;
+  display: grid;
+  grid-template-rows: repeat(1fr, 3);
+  gap: 1rem;
+  border: 1px black solid;
+  padding: 0.5em;
+  margin: 0.2em;
+}
 }
 
 @media (max-width: 960px){
@@ -69,15 +79,6 @@
   border-radius: 10px;
 }
 
-.add-form{
-  width: 30vw;
-  display: grid;
-  grid-template-rows: repeat(1fr, 3);
-  gap: 1rem;
-  border: 1px black solid;
-  padding: 0.5em;
-  margin: 0.2em;
-}
 
 .hide{
   display: none;
