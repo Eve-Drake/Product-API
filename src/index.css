@@ -91,3 +91,9 @@
 .hide{
   display: none;
 }
+
+
+.nav-bar{
+  width: 100%;
+  display: inline;
+}

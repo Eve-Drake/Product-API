@@ -3,12 +3,10 @@ import React from 'react'
 const Nav = () => {
   return (
     <>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul className='nav-bar'>
+        <li>Add</li>
+        <li>All</li>
+        <li>Calegories</li>
       </ul>
     </>
   )
