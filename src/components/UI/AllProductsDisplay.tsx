@@ -12,8 +12,8 @@ const AllProductsDisplay = ({products, activeProductCategory}: Props) => {
     <>
         <h2>{activeProductCategory}</h2>
         <div className='products-display-grid'>
-            {products.map( (product, index) =>(
-            <div key={index}>
+            {products.map( product=>(
+            <div key={product.id}>
                 <DisplayData product={product} />
             </div>
             ))}
